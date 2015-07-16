@@ -8,7 +8,10 @@ $(document).ready(function() {
   var $filtersContainer = $('#find-more');
 
   $tabItem
-    .tab()
+    .tab({
+      history: true,
+      historyType: 'hash'
+    })
   ;
 
   $shape.shape();
