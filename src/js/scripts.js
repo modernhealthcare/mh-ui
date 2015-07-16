@@ -2,6 +2,7 @@ $(document).ready(function() {
 
   var $window = $(window);
   var $tabItem = $('.tabular .item');
+  var $tabBreadcrumbs = $('[data-js="active-tab"]');
   var $shape = $('[data-js="shape"]');
   var $messageClose = $('[data-js="message-close"]');
   var $filters = $('[data-js="filters"]');
@@ -11,6 +12,23 @@ $(document).ready(function() {
     .tab({
       history: true,
       historyType: 'hash'
+    })
+  ;
+
+  function capitalize(s) {
+    return s && s[0].toUpperCase() + s.slice(1);
+  };
+
+  function updatedTabBreadcrumb(elem) {
+    var activeTab = capitalize($('.tab.active').attr('data-tab'));
+    elem
+      .text(activeTab + ' Award')
+    ;
+  };
+
+  $tabItem
+    .click(function() {
+      updatedTabBreadcrumb($tabBreadcrumbs);
     })
   ;
 
@@ -40,5 +58,9 @@ $(document).ready(function() {
     stickyFilters($filters, $filtersContainer, 16, 16);
 
   }
+
+  $(window).load(function() {
+    updatedTabBreadcrumb($tabBreadcrumbs);
+  });
 
 });
