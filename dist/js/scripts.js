@@ -1,12 +1,24 @@
 $(document).ready(function() {
 
   var $window = $(window);
+  var $bxslider = $('[data-js="bxslider"]');
+  var bxsliderPrev = '[data-direction="left"]';
+  var bxsliderNext = '[data-direction="right"]';
   var $tabItem = $('.tabular .item');
   var $tabBreadcrumbs = $('[data-js="active-tab"]');
+  var $embed = $('[data-js="embed"]');
   var $shape = $('[data-js="shape"]');
   var $messageClose = $('[data-js="message-close"]');
   var $filters = $('[data-js="filters"]');
   var $filtersContainer = $('#find-more');
+
+  $bxslider
+    .bxSlider({
+      auto: false,
+      adaptiveHeight: true,
+      captions: true
+    })
+  ;
 
   $tabItem
     .tab({
@@ -32,6 +44,7 @@ $(document).ready(function() {
     })
   ;
 
+  $embed.embed();
   $shape.shape();
 
   $messageClose

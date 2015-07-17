@@ -7,6 +7,7 @@
   <title>Modern Healthcare UI</title>
   <style>.mh-header,.mh-logo a{overflow:hidden}.mh-header{position:relative;background:#424b55;text-shadow:1px 1px 2px rgba(0,0,0,.35);box-shadow:inset 0 2px 3px rgba(0,0,0,.35);padding:1em 0}.mh-logo{float:left;margin:0;padding:.25em}.mh-logo a{float:left;width:96px;height:36px;text-indent:-9999px;background-repeat:no-repeat;background-position:0 0;background-image:url(http://www.modernhealthcare.com/images/mh-logo-dropshadow.png);background-size:100% 100%;-moz-border-image:url(http://www.modernhealthcare.com/images/mh-logo-dropshadow.png);filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.modernhealthcare.com/images/mh-logo-dropshadow.png', sizingMethod='scale');-ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.modernhealthcare.com', sizingMethod='scale')"}@media screen and (min-width:48em){.mh-header{display:block}.mh-logo{padding:0}.logo a{width:160px;height:60px}}.mh-tagline{display:none;clear:both;color:#fff;font-family:Cambria,'Hoefler Text',Utopia,'Liberation Serif','Nimbus Roman No9 L Regular',Times,'Times New Roman',serif;font-size:1em;font-weight:400;font-style:italic;text-shadow:2px 2px 3px rgba(0,0,0,.35);padding:.5em 0 1em;margin:0}@media screen and (min-width:48em){.mh-tagline{display:block;font-size:.75em;padding-right:.5em}}@media screen and (min-width:64em){.mh-logo a{width:250px;height:94px}.mh-tagline{display:block;font-size:1em;padding-right:.5em}}</style>
   <link rel="stylesheet" href="../semantic/dist/semantic.min.css">
+  <link rel="stylesheet" href="../dist/css/styles.min.css">
 </head>
 <body>
 
@@ -60,37 +61,43 @@
                 <i class="grid icon yellow trophy"></i>
                 Gold Award
               </h1>
-              <div class="ui fluid image">
-                <a class="ui pink left corner label">
-                  <i class="heart icon"></i>
-                </a>
-                <img class="ui image fluid" src="https://placekitten.com/g/960/550">
-              </div>
+              <!-- start slides -->
+              <ul class="bxslider" data-js="bxslider" style="margin:0;">
+                <li>
+                  <div class="ui fluid image">
+                    <a class="ui pink left corner label">
+                      <i class="heart icon"></i>
+                    </a>
+                    <img class="ui image fluid" src="https://placekitten.com/g/960/550">
+                  </div>
+                </li>
+                <li>
+                  <div class="ui embed" data-source="youtube" data-id="l8Esr0Mdi7M" data-placeholder="https://placekitten.com/g/640/390" data-js="embed">
+                    <a class="ui pink left corner label">
+                      <i class="heart icon"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+              <!-- /end slides -->
               <div class="ui vertical menu">
                 <a class="item">
                   Likes
                   <div class="ui label pointing left pink">9</div>
                 </a>
+                <a class="item active">Download:</a>
                 <a class="item">
-                  <i class="grid icon grey download"></i> Download
+                  <i class="grid icon grey camera retro"></i> Image
+                </a>
+                <a class="item disabled">
+                  <i class="grid icon grey sound"></i> Audio
                 </a>
                 <a class="item">
-                  <i class="grid icon grey sound"></i> Listen
-                </a>
-                <a class="item">
-                  <i class="grid icon grey film"></i> Watch
+                  <i class="grid icon grey film"></i> Video
                 </a>
               </div>
             </div>
             <div class="column six wide">
-              <div class="ui grid">
-                <div class="ui column sixteen wide right aligned">
-                  <div class="ui ignored icon direction buttons">
-                    <div class="ui button" data-animation="flip" data-direction="left" title="Flip Left"><i class="left long arrow icon"></i></div>
-                    <div class="ui icon button" data-animation="flip" data-direction="right" title="Flip Right"><i class="right long arrow icon"></i></div>
-                  </div>
-                </div>
-              </div>
               <h2 class="ui header">Name or Title</h2>
               <p>
                 Ribeye kevin short ribs chuck corned beef. Pork landjaeger t-bone shoulder, cow capicola cupim rump ham. Pork chop tongue leberkas spare ribs meatball picanha frankfurter. Pastrami cow chicken, cupim spare ribs ball tip salami pancetta ribeye pork flank venison porchetta tail bacon. Sirloin venison filet mignon shoulder pork belly swine biltong. Meatloaf sausage porchetta hamburger t-bone kielbasa. Flank porchetta short loin turkey bresaola alcatra fatback jowl spare ribs meatloaf ribeye tongue.
@@ -127,26 +134,19 @@
                   Likes
                   <div class="ui label pointing left pink">5</div>
                 </a>
+                <a class="item active">Download:</a>
                 <a class="item">
-                  <i class="grid icon grey download"></i> Download
+                  <i class="grid icon grey camera retro"></i> Image
                 </a>
-                <a class="item">
-                  <i class="grid icon grey sound"></i> Listen
+                <a class="item disabled">
+                  <i class="grid icon grey sound"></i> Audio
                 </a>
-                <a class="item">
-                  <i class="grid icon grey film"></i> Watch
+                <a class="item disabled">
+                  <i class="grid icon grey film"></i> Video
                 </a>
               </div>
             </div>
             <div class="column six wide">
-              <div class="ui grid">
-                <div class="ui column sixteen wide right aligned">
-                  <div class="ui ignored icon direction buttons">
-                    <div class="ui button" data-animation="flip" data-direction="left" title="Flip Left"><i class="left long arrow icon"></i></div>
-                    <div class="ui icon button" data-animation="flip" data-direction="right" title="Flip Right"><i class="right long arrow icon"></i></div>
-                  </div>
-                </div>
-              </div>
               <h2 class="ui header">Name or Title</h2>
               <p>
                 Ribeye kevin short ribs chuck corned beef. Pork landjaeger t-bone shoulder, cow capicola cupim rump ham. Pork chop tongue leberkas spare ribs meatball picanha frankfurter. Pastrami cow chicken, cupim spare ribs ball tip salami pancetta ribeye pork flank venison porchetta tail bacon. Sirloin venison filet mignon shoulder pork belly swine biltong. Meatloaf sausage porchetta hamburger t-bone kielbasa. Flank porchetta short loin turkey bresaola alcatra fatback jowl spare ribs meatloaf ribeye tongue.
@@ -183,26 +183,19 @@
                   Likes
                   <div class="ui label pointing left pink">11</div>
                 </a>
+                <a class="item active">Download:</a>
                 <a class="item">
-                  <i class="grid icon grey download"></i> Download
+                  <i class="grid icon grey camera retro"></i> Image
                 </a>
-                <a class="item">
-                  <i class="grid icon grey sound"></i> Listen
+                <a class="item disabled">
+                  <i class="grid icon grey sound"></i> Audio
                 </a>
-                <a class="item">
-                  <i class="grid icon grey film"></i> Watch
+                <a class="item disabled">
+                  <i class="grid icon grey film"></i> Video
                 </a>
               </div>
             </div>
             <div class="column six wide">
-              <div class="ui grid">
-                <div class="ui column sixteen wide right aligned">
-                  <div class="ui ignored icon direction buttons">
-                    <div class="ui button" data-animation="flip" data-direction="left" title="Flip Left"><i class="left long arrow icon"></i></div>
-                    <div class="ui icon button" data-animation="flip" data-direction="right" title="Flip Right"><i class="right long arrow icon"></i></div>
-                  </div>
-                </div>
-              </div>
               <h2 class="ui header">Name or Title</h2>
               <p>
                 Ribeye kevin short ribs chuck corned beef. Pork landjaeger t-bone shoulder, cow capicola cupim rump ham. Pork chop tongue leberkas spare ribs meatball picanha frankfurter. Pastrami cow chicken, cupim spare ribs ball tip salami pancetta ribeye pork flank venison porchetta tail bacon. Sirloin venison filet mignon shoulder pork belly swine biltong. Meatloaf sausage porchetta hamburger t-bone kielbasa. Flank porchetta short loin turkey bresaola alcatra fatback jowl spare ribs meatloaf ribeye tongue.
@@ -524,6 +517,7 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.address/1.6/jquery.address.min.js"></script>
+  <script src="http://bxslider.com/lib/jquery.bxslider.min.js"></script>
   <script src="../semantic/dist/semantic.min.js"></script>
   <script src="../dist/js/scripts.min.js"></script>
 </body>
