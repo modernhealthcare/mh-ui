@@ -34,7 +34,7 @@ $(document).ready(function() {
   function updatedTabBreadcrumb(elem) {
     var activeTab = capitalize($('.tab.active').attr('data-tab'));
     elem
-      .text(activeTab + ' Award')
+      .html('Category &bull; ' + activeTab + ' Award')
     ;
   };
 
