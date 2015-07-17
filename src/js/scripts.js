@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
   var $window = $(window);
+  var $cardImage = $('[data-js="card-image"]');
   var $bxslider = $('[data-js="bxslider"]');
   var bxsliderPrev = '[data-direction="left"]';
   var bxsliderNext = '[data-direction="right"]';
@@ -11,6 +12,12 @@ $(document).ready(function() {
   var $messageClose = $('[data-js="message-close"]');
   var $filters = $('[data-js="filters"]');
   var $filtersContainer = $('#find-more');
+
+  $cardImage
+    .dimmer({
+      on: 'hover'
+    })
+  ;
 
   $bxslider
     .bxSlider({

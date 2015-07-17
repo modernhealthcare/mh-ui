@@ -7,6 +7,7 @@ var gulp = require('gulp'),
   uglify = require('gulp-uglify'),
   include = require('gulp-file-include'),
   minifyHTML = require('gulp-html-minifier'),
+  imagemin = require('gulp-imagemin'),
   watch = require('gulp-watch'),
   browserSync = require('browser-sync'),
   reload = browserSync.reload;
@@ -50,6 +51,14 @@ gulp.task('html', function() {
   .pipe(gulp.dest('./dist'))
 });
 
+gulp.task('images', function() {
+  gulp.src('./src/img/*')
+  .pipe(imagemin({
+    progressive: true
+  }))
+  .pipe(gulp.dest('./dist/img'));
+});
+
 gulp.task('browser-sync', function() {
   browserSync.init({
     server: {
@@ -63,10 +72,11 @@ gulp.task('reload', function() {
   browserSync.reload();
 });
 
-gulp.task('build', ['styles', 'scripts', 'html']);
+gulp.task('build', ['styles', 'scripts', 'html', 'images']);
 
 gulp.task('default', ['build', 'browser-sync'], function() {
   gulp.watch('./src/less/*.less', ['styles', 'reload'])
   gulp.watch('./src/js/*.js', ['scripts', 'reload']);
   gulp.watch('./src/**/*.html', ['html', 'reload']);
+  gulp.watch('./src/img/*', ['images', 'reload']);
 });
