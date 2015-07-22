@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 'use strict';
 
 var mhApp = angular.module('controllers.main', []);
@@ -19,3 +20,4 @@ mhApp
       }
   ])
 ;
+/* jshint ignore:end */

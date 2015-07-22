@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 'use strict';
 
 var mhApp = angular.module('mainRouter', ['ngRoute']);
@@ -14,3 +15,4 @@ mhApp
       });
   })
 ;
+/* jshint ignore:end */

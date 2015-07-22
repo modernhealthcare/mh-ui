@@ -1,3 +1,4 @@
+/* jshint ignore:start */
 'use strict';
 
 var mhApp = angular.module('mhApp', [
@@ -5,3 +6,4 @@ var mhApp = angular.module('mhApp', [
   'controllers.main',
   'services.main'
 ]);
+/* jshint ignore:end */
