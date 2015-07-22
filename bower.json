@@ -1,0 +1,9 @@
+{
+  "name": "mh-ui",
+  "private": true,
+  "dependencies": {
+    "angularjs": "~1.4.0",
+    "angular-route": "~1.4.0",
+    "semantic": "~2.0.6"
+  }
+}

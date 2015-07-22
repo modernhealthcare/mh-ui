@@ -1,0 +1,125 @@
+<div class="ui container">
+
+  <div class="ui grid">
+
+    <div class="ui container">
+      <div class="ui grid">
+        <!--  sixteen wide mobile eight wide tablet four wide computer column -->
+        <div class="sixteen wide mobile column">
+
+          <div class="ui divider"></div>
+          <div class="ui success message">
+            <p>Sort Type:&nbsp;&nbsp;<strong>{{ sortType }}</strong></p>
+            <p>Sort Reverse:&nbsp;&nbsp;<strong>{{ sortReverse }}</strong></p>
+            <p>Search Query:&nbsp;&nbsp;<strong>{{ searchItems }}</strong></p>
+          </div>
+          <div class="ui sticky" data-js="card-gallery-filters">
+            <div class="ui segment">
+              <div class="ui secondary stackable menu">
+                <div class="header item">
+                  Filter By:
+                </div>
+                <a class="item" ng-click="sortType = 'name'; sortReverse = !sortReverse">
+                  <i class="icon blue trophy"></i>
+                  Award
+                </a>
+                <!--
+                <a class="item">
+                  <i class="icon blue marker"></i>
+                  Location
+                </a>
+                -->
+                <a class="item" ng-click="sortType = 'agencyFirm'; sortReverse = !sortReverse">
+                  <i class="icon blue suitcase"></i>
+                  Agency/Firm
+                </a>
+                <a class="item" ng-click="sortType = 'client'; sortReverse = !sortReverse">
+                  <i class="icon blue building"></i>
+                  Client
+                </a>
+                <div class="right item">
+                <div class="ui icon input">
+                    <input type="text" placeholder="Search..." ng-model="searchItems">
+                    <i class="search icon"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui segment" data-js="card-gallery">
+            <div class="ui right very close rail">
+              <div class="ui sticky" data-js="card-gallery-share">
+
+              </div>
+            </div>
+            <div class="ui three column grid stackable special cards">
+              <div class="column" ng-repeat="item in items | orderBy:sortType:sortReverse | filter:searchItems">
+                <div class="ui fluid card">
+                  <div class="blurring dimmable image" data-js="card-image">
+                    <div class="ui dimmer">
+                      <div class="content">
+                        <div class="center">
+                          <a class="ui primary button" href="#">
+                            <i class="icon chevron right"></i>
+                            Read More
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                    <img ng-src="{{ item.image }}" alt="{{ item.name }}">
+                    <div class="ui blue ribbon label">
+                      <i class="icon heart"></i>{{ item.likes }}
+                    </div>
+                  </div>
+                  <div class="content">
+                    <a class="header" href="#">
+                      {{ item.name }}
+                    </a>
+                    <div class="meta">
+                      <span class="date">{{ item.date }}</span>
+                    </div>
+                    <div class="description">
+                      {{ item.summary }}
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <strong>Agency/Firm: </strong>{{ item.agencyFirm }}
+                  </div>
+                  <div class="extra content">
+                    <strong>Client: </strong>{{ item.client }}
+                  </div>
+                  <div class="extra content">
+                    <div class="ui horizontal link list">
+                      <a class="item" href="#">
+                        <span class="ui yellow empty circular label" style="margin-left:0;"></span>&nbsp;Gold
+                      </a>
+                      <a class="item" href="#">
+                        <span class="ui grey empty circular label" style="margin-left:0;"></span>&nbsp;Silver
+                      </a>
+                      <a class="item" href="#">
+                        <span class="ui orange empty circular label" style="margin-left:0;"></span>&nbsp;Bronze
+                      </a>
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <a>
+                      <i class="icon camera retro"></i>{{ item.imageCount }}&nbsp;&nbsp;
+                    </a>
+                    <a>
+                      <i class="icon sound"></i>{{ item.audioCount }}&nbsp;&nbsp;
+                    </a>
+                    <a>
+                      <i class="icon film"></i>{{ item.videoCount }}&nbsp;&nbsp;
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

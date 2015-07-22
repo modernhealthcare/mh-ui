@@ -1,0 +1,71 @@
+.mh-header,
+.mh-logo a {
+  overflow: hidden
+}
+.mh-header {
+  position: relative;
+  background: #424b55;
+  text-shadow: 1px 1px 2px rgba(0,0,0,.35);
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.35);
+  padding:1em 0
+}
+.mh-logo {
+  float: left;
+  margin: 0;
+  padding: .25em
+}
+.mh-logo a {
+  float: left;
+  width: 96px;
+  height: 36px;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-image: url(http://www.modernhealthcare.com/images/mh-logo-dropshadow.png);
+  background-size: 100% 100%;
+  -moz-border-image: url(http://www.modernhealthcare.com/images/mh-logo-dropshadow.png);
+  filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.modernhealthcare.com/images/mh-logo-dropshadow.png', sizingMethod='scale');
+  -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://www.modernhealthcare.com', sizingMethod='scale')";
+}
+@media screen and (min-width:48em) {
+  .mh-header {
+    display: block
+  }
+  .mh-logo {
+    padding: 0
+  }
+  .logo a {
+    width: 160px;
+    height: 60px
+  }
+}
+.mh-tagline {
+  display: none;
+  clear: both;
+  color: #fff;
+  font-family: Cambria,'Hoefler Text',Utopia,'Liberation Serif','Nimbus Roman No9 L Regular',Times,'Times New Roman',serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: italic;
+  text-shadow: 2px 2px 3px rgba(0,0,0,.35);
+  padding: .5em 0 1em;
+  margin: 0
+}
+@media screen and (min-width:48em) {
+  .mh-tagline {
+    display: block;
+    font-size: .75em;
+    padding-right: .5em
+  }
+}
+@media screen and (min-width:64em) {
+  .mh-logo a{
+    width: 250px;
+    height: 94px
+  }
+  .mh-tagline{
+    display: block;
+    font-size: 1em;
+    padding-right: .5em
+  }
+}
