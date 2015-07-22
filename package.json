@@ -28,6 +28,7 @@
     "main-bower-files": "^2.4.1",
     "opn": "^1.0.1",
     "serve-index": "^1.5.3",
-    "serve-static": "^1.7.1"
+    "serve-static": "^1.7.1",
+    "wiredep": "^3.0.0-beta"
   }
 }

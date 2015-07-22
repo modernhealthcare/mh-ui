@@ -4,6 +4,7 @@
   "dependencies": {
     "angularjs": "~1.4.0",
     "angular-route": "~1.4.0",
+    "jquery": "~2.1.4",
     "semantic": "~2.0.6"
   }
 }

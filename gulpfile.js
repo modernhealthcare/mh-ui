@@ -30,7 +30,7 @@ gulp.task('html', ['styles', 'semantic'], function () {
 
   return gulp.src('app/**/*.html')
     .pipe(assets)
-    .pipe($.if('*.js', $.uglify()))
+    .pipe($.if('*.js', $.uglify({mangle: false})))
     .pipe($.if('*.css', $.csso()))
     .pipe(assets.restore())
     .pipe($.useref())
@@ -72,7 +72,7 @@ gulp.task('e2e', function () {
         configFile: 'tests/protractor.conf.js',
         args: ['--baseUrl', 'http://127.0.0.1:8000'],
         debug: false
-      })) 
+      }))
       .on('error', function(e) { throw e })
 });
 
