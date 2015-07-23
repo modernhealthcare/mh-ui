@@ -13,7 +13,7 @@ mhApp
         $scope.items = mainService.data;
 
         $scope.sortType = '';
-        $scope.sortReverse = false;
+        $scope.sortReverse = true;
         $scope.searchItems = '';
 
       }
