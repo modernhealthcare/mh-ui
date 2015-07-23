@@ -15,6 +15,7 @@
         <h3><code>Data Binding</code></h3>
         <code>ID:&nbsp;&nbsp;<strong>{{ item.id }}</strong></code><br>
         <code>Name:&nbsp;&nbsp;<strong>{{ item.name }}</strong></code><br>
+        <code>Selected Option:&nbsp;&nbsp;<strong>{{ selectedOption }}</strong></code>
       </div>
       <div class="ui sticky">
         <div class="ui segment">
@@ -36,19 +37,9 @@
               Bronze
             </a>
             <div class="right item">
-              <select class="ui fluid normal dropdown" dropdown>
-                <option>
-                  More Categories
-                </option>
-                <option>
-                  Advocacy, Integrated Campaign of the Year
-                </option>
-                <option>
-                  Advocacy, Social Media Campaign of the Year
-                </option>
-                <option>
-                  Insurers, Integrated Campaign of the Year
-                </option>
+              <select class="ui fluid normal dropdown" ng-model="selectedOption" dropdown>
+                <option value="">More Categories</option>
+                <option ng-repeat="option in options | orderBy: 'name'" ng-value="{{ option.id }}" goTo="'/'">{{ option.name }}</option>
               </select>
             </div>
           </div>

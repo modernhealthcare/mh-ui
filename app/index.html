@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <style>[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display: none !important;}</style>
-    <base href="/index.html">
+    <base href="/">
   </head>
   <body>
 
@@ -32,22 +32,26 @@
 
     <div ng-view ng-cloak></div>
 
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-route.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/semantic-ui/2.0.6/semantic.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/semantic-ui/2.0.6/semantic.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/semantic-ui/2.0.6/components/dimmer.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/semantic-ui/2.0.6/components/sticky.min.js"></script>
+    <script src="http://cdn.jsdelivr.net/semantic-ui/2.0.6/components/dropdown.min.js"></script>
     <!-- build:js script.js -->
     <!-- bower:js -->
-    <script src="../../bower_components/jquery/dist/jquery.js"></script>
-    <script src="../bower_components/angularjs/angular.js"></script>
-    <script src="../bower_components/angular-route/angular-route.js"></script>
-    <script src="../../bower_components/semantic/dist/semantic.js"></script>
     <!-- endbower -->
+    <script src="scripts/app.js"></script>
+    <script src="scripts/route.js"></script>
     <script src="scripts/services/appService.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
     <script src="scripts/controllers/categoryCtrl.js"></script>
+    <script src="scripts/directives/goToDirective.js"></script>
     <script src="scripts/directives/cardDimmerDirective.js"></script>
     <script src="scripts/directives/stickyRailDirective.js"></script>
     <script src="scripts/directives/dropdownDirective.js"></script>
-    <script src="scripts/route.js"></script>
-    <script src="scripts/app.js"></script>
     <!-- endbuild -->
   </body>
 </html>

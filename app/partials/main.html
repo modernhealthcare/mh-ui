@@ -88,7 +88,7 @@
                 <div class="ui dimmer">
                   <div class="content">
                     <div class="center">
-                      <a class="ui primary button" ng-href="/category/{{ item.id }}">
+                      <a class="ui primary button" ng-href="{{ '/category/' + item.id }}">
                         <!--<i class="icon chevron right"></i>-->
                         Read More
                       </a>
@@ -101,7 +101,7 @@
                 </div>
               </div>
               <div class="content">
-                <a class="header" ng-href="/category/{{ item.id }}">
+                <a class="header" ng-href="{{ '/category/' + item.id }}">
                   {{ item.name }}
                 </a>
                 <div class="meta">
@@ -113,13 +113,13 @@
               </div>
               <div class="extra content">
                 <div class="ui horizontal link list">
-                  <a class="item" ng-href="/category/{{ item.id }}">
+                  <a class="item" ng-href="{{ '/category/' + item.id }}">
                     <span class="ui yellow empty circular label" style="margin-left:0;"></span>&nbsp;Gold
                   </a>
-                  <a class="item" ng-href="/category/{{ item.id }}">
+                  <a class="item" ng-href="{{ '/category/' + item.id }}">
                     <span class="ui grey empty circular label" style="margin-left:0;"></span>&nbsp;Silver
                   </a>
-                  <a class="item" ng-href="/category/{{ item.id }}">
+                  <a class="item" ng-href="{{ '/category/' + item.id }}">
                     <span class="ui orange empty circular label" style="margin-left:0;"></span>&nbsp;Bronze
                   </a>
                 </div>

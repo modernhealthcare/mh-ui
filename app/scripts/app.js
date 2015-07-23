@@ -6,6 +6,7 @@ var mhApp = angular.module('mhApp', [
   'services.app',
   'controllers.main',
   'controllers.category',
+  'directive.goTo',
   'directive.cardDimmer',
   'directive.stickyRail',
   'directive.dropdown'

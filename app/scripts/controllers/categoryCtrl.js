@@ -14,7 +14,7 @@ mhApp
       function ($log, $scope, $http, $routeParams, appService) {
 
         $scope.items = appService.data;
-        $scope.greeting = 'Hello world.';
+        $scope.options = $scope.items;
 
         var id = $routeParams.id;
 
