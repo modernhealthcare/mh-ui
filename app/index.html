@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles/main.css">
     <!-- endbuild -->
     <style>[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak{display: none !important;}</style>
+    <base href="/">
   </head>
   <body>
 
@@ -34,13 +35,17 @@
 
     <!-- build:js script.js -->
     <!-- bower:js -->
+    <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../bower_components/angularjs/angular.js"></script>
     <script src="../bower_components/angular-route/angular-route.js"></script>
-    <script src="../../bower_components/jquery/dist/jquery.js"></script>
     <script src="../../bower_components/semantic/dist/semantic.js"></script>
     <!-- endbower -->
+    <script src="scripts/services/appService.js"></script>
     <script src="scripts/controllers/mainCtrl.js"></script>
-    <script src="scripts/services/mainService.js"></script>
+    <script src="scripts/controllers/categoryCtrl.js"></script>
+    <script src="scripts/directives/cardDimmerDirective.js"></script>
+    <script src="scripts/directives/stickyRailDirective.js"></script>
+    <script src="scripts/directives/dropdownDirective.js"></script>
     <script src="scripts/route.js"></script>
     <script src="scripts/app.js"></script>
     <!-- endbuild -->

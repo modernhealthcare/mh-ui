@@ -1,16 +1,17 @@
 /* jshint ignore:start */
 'use strict';
 
-var mhApp = angular.module('services.main', []);
+var mhApp = angular.module('services.app', []);
 
 mhApp
-  .factory('mainService', [
+  .factory('appService', [
 
       function () {
 
         return {
           data: [
             {
+              "id": "1",
               "date": "September 23, 2014",
               "name": "Advocacy, Integrated Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -22,6 +23,7 @@ mhApp
               "videoCount": "3"
             },
             {
+              "id": "2",
               "date": "September 23, 2014",
               "name": "Insurers, Integrated Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -33,6 +35,7 @@ mhApp
               "audioCount": "2"
             },
             {
+              "id": "3",
               "date": "September 23, 2014",
               "name": "Providers, Integrated Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -45,6 +48,7 @@ mhApp
               "videoCount": "5"
             },
             {
+              "id": "4",
               "date": "September 23, 2014",
               "name": "Insurers, Video Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -55,6 +59,7 @@ mhApp
               "videoCount": "5"
             },
             {
+              "id": "5",
               "date": "September 23, 2014",
               "name": "Providers, Social Media Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -65,6 +70,7 @@ mhApp
               "imageCount": "9"
             },
             {
+              "id": "6",
               "date": "September 23, 2014",
               "name": "Advocacy, Social Media Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -75,6 +81,7 @@ mhApp
               "imageCount": "1"
             },
             {
+              "id": "7",
               "date": "September 23, 2014",
               "name": "Providers, Audio Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -85,6 +92,7 @@ mhApp
               "audioCount": "6"
             },
             {
+              "id": "8",
               "date": "September 23, 2014",
               "name": "Providers, Patient Education Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",
@@ -96,6 +104,7 @@ mhApp
               "videoCount": "3"
             },
             {
+              "id": "9",
               "date": "September 23, 2014",
               "name": "Suppliers, Patient Education Campaign of the Year",
               "summary": "This year, Modern Healthcare and Advertising Age partnered to create the Healthcare Marketing IMPACT Awards to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms.",

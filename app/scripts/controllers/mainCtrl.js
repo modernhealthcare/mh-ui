@@ -5,13 +5,13 @@ var mhApp = angular.module('controllers.main', []);
 
 mhApp
   .controller('mainCtrl', [
+    '$log',
     '$scope',
-    'mainService',
+    'appService',
 
-      function ($scope, mainService) {
+      function ($log, $scope, appService) {
 
-        $scope.items = mainService.data;
-
+        $scope.items = appService.data;
         $scope.sortType = 'name';
         $scope.sortReverse = false;
         $scope.searchItems = '';

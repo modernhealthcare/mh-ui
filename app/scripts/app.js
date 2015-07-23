@@ -3,7 +3,11 @@
 
 var mhApp = angular.module('mhApp', [
   'mainRouter',
+  'services.app',
   'controllers.main',
-  'services.main'
+  'controllers.category',
+  'directive.cardDimmer',
+  'directive.stickyRail',
+  'directive.dropdown'
 ]);
 /* jshint ignore:end */

@@ -4,15 +4,18 @@
 var mhApp = angular.module('mainRouter', ['ngRoute']);
 
 mhApp
-  .config(function ($routeProvider) {
+  .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'partials/main.html',
         controller: 'mainCtrl'
       })
-      .otherwise({
-        redirectTo: '/'
+      .when('/category/:id', {
+        templateUrl: 'partials/category.html',
+        controller: 'categoryCtrl'
       });
+      // use the HTML5 History API
+      $locationProvider.html5Mode(true);
   })
 ;
 /* jshint ignore:end */
