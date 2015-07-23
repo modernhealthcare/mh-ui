@@ -13,9 +13,6 @@
               <div class="sub header">2014</div>
             </div>
           </h1>
-          <p class="ui medium header">
-            The Healthcare Marketing IMPACT Awards are designed to recognize healthcare's best advertising, marketing, promotion and communication campaigns on and across all media platforms. The awards honor campaigns that advance provider, insurer, supplier and advocacy group efforts to deliver high quality, affordable and accessible healthcare; promote the health of individual patients, groups and communities; and help organizations thrive and grow in today's rapidly changing healthcare environment.
-        </p>
         </div>
         <div class="sixteen wide column">
           <div class="ui violet message">
@@ -32,7 +29,7 @@
                 </div>
                 <a class="item" ng-class="{'active':sortType === 'name'}" ng-click="sortType = 'name'; sortReverse = !sortReverse">
                   <i class="icon blue trophy"></i>
-                  Award
+                  Category
                   <i class="icon grey caret down" ng-show="sortType == 'name' && !sortReverse"></i>
                   <i class="icon grey caret up" ng-show="sortType == 'name' && sortReverse"></i>
                 </a>
@@ -42,6 +39,7 @@
                   Location
                 </a>
                 -->
+                <!--
                 <a class="item" ng-class="{'active':sortType === 'agencyFirm'}" ng-click="sortType = 'agencyFirm'; sortReverse = !sortReverse">
                   <i class="icon blue suitcase"></i>
                   Agency/Firm
@@ -54,6 +52,7 @@
                   <i class="icon grey caret down" ng-show="sortType == 'client' && !sortReverse"></i>
                   <i class="icon grey caret up" ng-show="sortType == 'client' && sortReverse"></i>
                 </a>
+                -->
                 <div class="right item">
                   <div class="ui icon input">
                     <input type="text" placeholder="Search..." ng-model="searchItems">
@@ -70,10 +69,7 @@
           <div class="ui segment" data-js="card-gallery">
             <div class="ui right very close rail">
               <div class="ui sticky" data-js="card-gallery-share">
-                <div class="ui middle aligned animated list">
-                  <div class="ui pointing below label">
-                    Share
-                  </div>
+                <div class="ui middle aligned list">
                   <div class="item">
                     <button class="ui button icon circular facebook"><i class="icon facebook"></i></button>
                   </div>
@@ -104,8 +100,8 @@
                       </div>
                     </div>
                     <img ng-src="{{ item.image }}" alt="{{ item.name }}">
-                    <div class="ui blue ribbon label">
-                      <i class="icon heart"></i>{{ item.likes }}
+                    <div class="ui yellow ribbon label">
+                      <i class="icon trophy"></i>Gold
                     </div>
                   </div>
                   <div class="content">
@@ -118,12 +114,6 @@
                     <div class="description">
                       {{ item.summary }}
                     </div>
-                  </div>
-                  <div class="extra content">
-                    <strong>Agency/Firm: </strong>{{ item.agencyFirm }}
-                  </div>
-                  <div class="extra content">
-                    <strong>Client: </strong>{{ item.client }}
                   </div>
                   <div class="extra content">
                     <div class="ui horizontal link list">
