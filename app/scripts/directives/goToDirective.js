@@ -5,15 +5,17 @@ var mhApp = angular.module('directive.goTo', []);
 
 mhApp
   .directive('goTo', [
+      '$log',
       '$location',
 
-      function ($location) {
+      function ($log, $location) {
 
         return {
           link: function (scope, element, attrs) {
-            element
+            $(element)
               .on('click', function () {
                 $location.path(attrs.goTo);
+                $log.log(attrs.goTo);
               })
             ;
           }

@@ -17,6 +17,8 @@
         <code>Name:&nbsp;&nbsp;<strong>{{ item.name }}</strong></code><br>
         <code>Selected Option:&nbsp;&nbsp;<strong>{{ selectedOption }}</strong></code>
       </div>
+    </div>
+    <div class="sixteen wide column">
       <div class="ui sticky">
         <div class="ui segment">
           <div class="ui secondary stackable menu">
@@ -37,14 +39,19 @@
               Bronze
             </a>
             <div class="right item">
-              <select class="ui fluid normal dropdown" ng-model="selectedOption" dropdown>
-                <option value="">More Categories</option>
-                <option ng-repeat="option in options | orderBy: 'name'" ng-value="{{ option.id }}" goTo="'/'">{{ option.name }}</option>
-              </select>
+              <div class="ui selection dropdown" dropdown>
+                <i class="dropdown icon"></i>
+                <div class="default text">More Categories</div>
+                <div class="menu">
+                  <div class="item" ng-repeat="item in items | orderBy: 'name'" go-to="{{ '/category/' + item.id }}">{{ item.name }}</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
+    </div>
+    <div class="sixteen wide column">
       <div class="ui segment">
         <img class="ui fluid image" ng-src="{{ item.image }}" alt="{{ item.name }}">
       </div>
